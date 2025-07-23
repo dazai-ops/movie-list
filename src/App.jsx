@@ -77,14 +77,12 @@ const App = () => {
 
       <div className="wrapper">
 
-        // Header page
         <header>
           <img src="./hero.png" alt="Hero Banner" />
           <h1>Find <span className='text-gradient'>Movies</span> You'll Enjoy Without the Hassle</h1>
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
         </header>
 
-        // Show trending movies
         {trendingMovies.length > 0 && (
           <section className="trending">
             <h2>Trending Movies</h2>
@@ -96,7 +94,6 @@ const App = () => {
           </section>
         )}
         
-        // Show all movies
         <section className='all-movies'>
           <h2 className="mt-[40px]">All Movies</h2>
           {isLoading ? (
